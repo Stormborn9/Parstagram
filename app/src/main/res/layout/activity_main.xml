@@ -10,8 +10,6 @@
     tools:context=".MainActivity">
 
 
-
-
     <EditText
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
@@ -40,5 +38,16 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
         android:text="Submit"
+        android:textColor="#009688" />
+
+    <Button
+        android:id="@+id/btnLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/white"
+        android:text="Logout"
         android:textColor="#009688" />
 </LinearLayout>

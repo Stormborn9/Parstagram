@@ -81,13 +81,13 @@ public class SignupActivity extends AppCompatActivity {
         // Show progress dialog
         pd.show();
         // Create the ParseUser
-        User user = (User) ParseUser.getCurrentUser();
+        ParseUser user = new ParseUser();
         // Set core properties
         user.setUsername(username);
         user.setPassword(password);
         user.setEmail(email);
         // Set custom properties
-        user.setFullName(fullname);
+        user.put("FullName", fullname);
         // Invoke signUpInBackground
         user.signUpInBackground(new SignUpCallback() {
             public void done(ParseException e) {
